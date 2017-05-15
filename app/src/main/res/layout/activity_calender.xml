@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.soyoung.butler.main.CalenderActivity"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="156dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="7dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="38dp"
+                android:layout_centerHorizontal="true"
+                android:gravity=""
+                android:text="출국일"
+                android:id="@+id/txt"
+                android:textSize="8pt"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:layout_width="156dp"
+                android:layout_height="38dp"
+                android:id="@+id/btn"
+                android:background="@drawable/button09"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="156dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="8dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="38dp"
+                android:layout_centerHorizontal="true"
+                android:gravity=""
+                android:text="귀국일"
+                android:id="@+id/txt2"
+                android:textSize="8pt"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:layout_width="156dp"
+                android:layout_height="38dp"
+                android:id="@+id/btn2"
+                android:background="@drawable/button09"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="44dp"
+    tools:context=".login.LoginInfo"
+    android:background="@drawable/backgroundimage"
+    android:orientation="vertical">
+
+    <LinearLayout
+    android:layout_width="188dp"
+    android:layout_height="192dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loginlogo"/>
+</LinearLayout>
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/facebook_login_button"
+            android:layout_width="290dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="38dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_marginTop="11dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/line"
+            android:textColor="#f0f0f0"
+            android:textSize="9pt"/>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/box"
+            android:id="@+id/imageView2" />
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:hint="이메일 주소"
+            android:id="@+id/email"
+            android:textSize="8pt"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:background="@null"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/box"/>
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="6dp"
+            android:hint="비밀번호"
+            android:id="@+id/pwd"
+            android:textSize="8pt"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:background="@null"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_gravity="center_horizontal"
+        android:text="비밀번호를 잊어버리셨습니까?"
+        android:textSize="5pt"
+        android:textColor="#f0f0f0"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="bottom">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:textSize="13dp"
+            android:text="로그인"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:id="@+id/loginBtn"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="13dp"
+            android:text="회원가입"
+            android:textColor="#ffffff"
+            android:background="@android:color/transparent"
+            android:id="@+id/joinBtn"/>
+    </LinearLayout>
+
+</LinearLayout>
